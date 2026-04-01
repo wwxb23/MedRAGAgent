@@ -1,0 +1,43 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Node / frontend
+frontend/node_modules/
+frontend/.cache/
+frontend/build/
+frontend/dist/
+
+# Local tooling
+.ace-tool/
+.claude/
+.vscode/
+
+# Runtime logs and temp files
+*.log
+*.err
+*.out
+*.pid
+
+# Local databases / indexes / artifacts
+chroma_db/
+
+# Benchmarks and bulky local datasets
+MedBench/
+
+# Backup files
+*.bak
