@@ -2,19 +2,47 @@
 .env
 .env.*
 !.env.example
+.envrc
+.pypirc
 
 # Python
 __pycache__/
 *.py[cod]
 *.pyo
+*$py.class
+*.so
+.Python
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+.hypothesis/
+.pyre/
+.pytype/
+.tox/
+.nox/
 .coverage
+.coverage.*
 htmlcov/
+.cache/
+build/
+dist/
+site/
 .venv/
 venv/
 env/
+ENV/
+env.bak/
+venv.bak/
+__pypackages__/
+.pixi/
+.pdm-python
+.pdm-build/
+*.egg
+*.egg-info/
+.installed.cfg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
 
 # Node / frontend
 frontend/node_modules/
@@ -26,6 +54,9 @@ frontend/dist/
 .ace-tool/
 .claude/
 .vscode/
+.abstra/
+.cursorignore
+.cursorindexingignore
 
 # Runtime logs and temp files
 *.log
@@ -35,9 +66,20 @@ frontend/dist/
 
 # Local databases / indexes / artifacts
 chroma_db/
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache/
 
 # Benchmarks and bulky local datasets
 MedBench/
 
-# Backup files
+# Backup and generated files
 *.bak
+*.manifest
+*.spec
+docs/_build/
+target/
+marimo/_static/
+marimo/_lsp/
+__marimo__/
